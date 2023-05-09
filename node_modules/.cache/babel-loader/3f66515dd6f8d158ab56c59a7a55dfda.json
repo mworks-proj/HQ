@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { from } from './base.js';\nimport { fromString, toString } from '../bytes.js';\nexport const identity = from({\n  prefix: '\\0',\n  name: 'identity',\n  encode: buf => toString(buf),\n  decode: str => fromString(str)\n});","map":null,"metadata":{},"sourceType":"module"}
